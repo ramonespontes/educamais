@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ifpb.edu.br.educamais">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -24,7 +25,14 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".CadastrarUsuario" />
-        <activity android:name=".Menu"></activity>
+        <activity android:name=".Menu" />
+        <activity android:name=".Sala" />
+        <activity android:name=".OrganizadorConteudo" />
+        <activity android:label="@string/contatos" android:name=".Contatos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Sala"/>
+        </activity>
     </application>
 
 </manifest>

@@ -4,23 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu"
-    tools:layout_editor_absoluteY="25dp">
+    tools:context=".OrganizadorConteudo">
+
 
     <ImageButton
-        android:id="@+id/imageButtonSala"
+        android:id="@+id/imageButtonMensagens"
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="42dp"
         android:layout_marginLeft="42dp"
         android:layout_marginRight="42dp"
         android:layout_marginStart="42dp"
         android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMenuConhecimento"
-        app:srcCompat="@drawable/chat" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrganizador"
+        app:srcCompat="@drawable/mensagemgroup" />
 
     <TextView
         android:id="@+id/textView"
@@ -31,14 +30,14 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Sala Virtual"
+        android:text="Conversas"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonSala" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonMensagens" />
 
     <ImageButton
-        android:id="@+id/imageButtonConteudo"
+        android:id="@+id/imageButtonCamera"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginEnd="42dp"
@@ -49,7 +48,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/library" />
+        app:srcCompat="@drawable/cameraphoto" />
+
+    <TextView
+        android:id="@+id/textViewFotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Fotos"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonCamera" />
+
+    <ImageButton
+        android:id="@+id/imageButtonVideos"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFotos"
+        app:srcCompat="@drawable/videos" />
 
     <TextView
         android:id="@+id/textViewConteudo"
@@ -60,15 +89,15 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Organizador de Conteúdo"
+        android:text="Videos"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonConteudo" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonVideos" />
 
     <TextView
-        android:id="@+id/textViewMenuConhecimento"
+        android:id="@+id/textViewOrganizador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -76,7 +105,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="30dp"
-        android:text="Menu do Conhecimento"
+        android:text="Organizador de Conteúdo"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

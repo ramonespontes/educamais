@@ -2,9 +2,13 @@ package ifpb.edu.br.educamais;
 
 public class User {
 
-    private final String uuid;
-    private final String username;
-    private final String profileURL;
+    private  String uuid;
+    private  String username;
+    private  String profileURL;
+
+    public User(){
+
+    }
 
 
     public User(String uuid, String username, String profileURL) {
