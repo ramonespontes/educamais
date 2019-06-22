@@ -147,10 +147,13 @@ public class CadastrarUsuario extends AppCompatActivity {
                         String profileURL = uri.toString();
                         User user = new User(uudi, username, profileURL);
 
-                        FirebaseFirestore.getInstance().collection("users").add(user).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                        FirebaseFirestore.getInstance().collection("users").document(uudi).set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
-                            public void onSuccess(DocumentReference documentReference) {
-                                Log.i("Cadastrado Firecloud", documentReference.getId());
+                            public void onSuccess(Void aVoid) {
+
+                                Intent intent = new Intent(getApplicationContext(), Menu.class);
+                                startActivity(intent);
+
                             }
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override

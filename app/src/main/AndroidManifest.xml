@@ -28,11 +28,15 @@
         <activity android:name=".Menu" />
         <activity android:name=".Sala" />
         <activity android:name=".OrganizadorConteudo" />
-        <activity android:label="@string/contatos" android:name=".Contatos">
+        <activity
+            android:name=".Contatos"
+            android:label="@string/contatos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Sala"/>
+                android:value=".Sala" />
         </activity>
+
+
     </application>
 
 </manifest>

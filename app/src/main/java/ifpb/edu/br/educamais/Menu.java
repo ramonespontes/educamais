@@ -19,7 +19,7 @@ public class Menu extends AppCompatActivity {
         imageButtonsala.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), Sala.class);
+                Intent i = new Intent(getApplicationContext(), Contatos.class);
                 startActivity(i);
             }
         });

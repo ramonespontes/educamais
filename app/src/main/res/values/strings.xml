@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Educa Mais</string>
-    <string name="contatos">contatos</string>
-    <string name="sair">sair</string>
+    <string name="contatos">Participantes</string>
+    <string name="sair">Sair</string>
 </resources>

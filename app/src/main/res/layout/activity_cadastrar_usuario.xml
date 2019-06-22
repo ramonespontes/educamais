@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorCinzaClaro"
+    android:background="@drawable/backgroud"
     tools:context=".CadastrarUsuario"
     tools:layout_editor_absoluteY="25dp">
 
@@ -17,7 +17,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
-        android:background="@drawable/edittext_arredondado"
+        android:background="@drawable/botao_arredondado"
         android:ems="10"
         android:hint="Nome"
         android:inputType="text"
@@ -31,9 +31,9 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/edittext_arredondado"
         android:ems="10"
         android:hint="E-mail"
+        android:background="@drawable/botao_arredondado"
         android:inputType="textEmailAddress"
         android:paddingLeft="8dp"
         app:layout_constraintEnd_toEndOf="@+id/editTextName"
@@ -45,7 +45,7 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/edittext_arredondado"
+        android:background="@drawable/botao_arredondado"
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
@@ -59,14 +59,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="@drawable/botao_arredondado"
+        android:background="@drawable/botao_arredondado_verde"
         android:text="Cadastrar"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
         app:layout_constraintStart_toStartOf="@+id/editTextPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
-        tools:textColor="@color/colorBranca"
-        tools:textSize="25dp" />
+        android:textColor="@color/colorBranca"
+        android:textSize="25dp" />
 
 
     <ImageButton
@@ -78,9 +78,11 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
+        android:background="@drawable/botao_arredondado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fotocaptura" />
+        app:srcCompat="@drawable/fotocaptura"
+        />
 
 </android.support.constraint.ConstraintLayout>

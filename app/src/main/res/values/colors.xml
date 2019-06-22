@@ -7,4 +7,9 @@
     <color name="colorBranca">#ffffff</color>
     <color name="colorCinzaClaro">#ececec</color>
     <color name="colorVermelho">#c10606</color>
+    <color name="luzcinza">#ededed</color>
+    <color name="roxo">#7c4dff</color>
+    <color name="verde">#00bfa5</color>
+    <color name="rosa">#ff4081</color>
+
 </resources>
