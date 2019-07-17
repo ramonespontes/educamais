@@ -78,11 +78,23 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
-        android:background="@drawable/botao_arredondado"
+        android:background="@drawable/fotocaptura"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fotocaptura"
         />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonFoto"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonFoto"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonFoto"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonFoto"
+        app:layout_constraintVertical_bias="1.0"
+        android:background="@color/colorVermelho"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
 
 </android.support.constraint.ConstraintLayout>
