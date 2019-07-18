@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageViewMessegerUser"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -19,16 +19,28 @@
 
     <TextView
         android:id="@+id/textViewMessenger"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:text="TextView TextView TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView"
-        android:padding="8dp"
         android:background="@drawable/botao_arredondado"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:maxWidth="240dp"
+        android:padding="8dp"
+        android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/imageViewMessegerUser"
         app:layout_constraintTop_toTopOf="@+id/imageViewMessegerUser" />
+
+    <ImageView
+        android:id="@+id/imageViewFromUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewMessegerUser"
+        tools:srcCompat="@tools:sample/avatars" />
 </android.support.constraint.ConstraintLayout>

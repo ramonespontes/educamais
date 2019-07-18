@@ -47,9 +47,10 @@ public class Contatos extends AppCompatActivity {
             public void onItemClick(@NonNull Item item, @NonNull View view) {
                 Intent intent = new Intent(getApplicationContext(), Sala.class);
 
-                //Criando o usuário da mensagem
+                //Criando o usuário de destino da mensagem
                 UserItem userItem = (UserItem) item;
-                intent.putExtra("user", userItem.usuario);
+                intent.putExtra("userdestino", userItem.usuario);
+
 
 
                 startActivity(intent);

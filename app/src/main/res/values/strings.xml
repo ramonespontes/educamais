@@ -2,4 +2,11 @@
     <string name="app_name">Educa Mais</string>
     <string name="contatos">Participantes</string>
     <string name="sair">Sair</string>
+    <string name="title_activity_organizador_tab_conteudo">Organizador de Conteúdo</string>
+    <string name="tab_text_1">Imagens</string>
+    <string name="tab_text_2">Mensagens</string>
+    <string name="tab_text_3">Vídeos</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_organizador">Organizador</string>
 </resources>

@@ -34,4 +34,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageViewFoto"
         app:layout_constraintTop_toTopOf="@+id/imageViewFoto" />
+
+
 </android.support.constraint.ConstraintLayout>

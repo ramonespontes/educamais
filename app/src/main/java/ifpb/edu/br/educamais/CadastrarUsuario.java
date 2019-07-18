@@ -91,6 +91,10 @@ public class CadastrarUsuario extends AppCompatActivity {
                                 buttonCadastrar.setBackgroundColor(R.drawable.botao_arredondado_vermelho);
                                 //Salvar o usuário no firestore
                                 salvarUsuario();
+                            }else{
+                                String resposta = task.getException().toString();
+                                Toast.makeText(getApplicationContext(), resposta, Toast.LENGTH_LONG).show();
+
                             }
                         }
                     }).addOnFailureListener(new OnFailureListener() {

@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 
 public class MainActivity extends AppCompatActivity {
@@ -50,21 +51,26 @@ public class MainActivity extends AppCompatActivity {
                     FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                            Toast.makeText(getApplicationContext(), "Usuário autenticado!",Toast.LENGTH_LONG).show();
-                            Log.i("Autenticando", task.getResult().getUser().getUid());
 
-                            Intent i = new Intent(getApplicationContext(), Menu.class);
-                            startActivity(i);
+                            if(task.isSuccessful()) {
+                                Toast.makeText(getApplicationContext(), "Usuário autenticado!", Toast.LENGTH_LONG).show();
+                                Log.i("Autenticando", task.getResult().getUser().getUid());
+
+                                Intent i = new Intent(getApplicationContext(), Menu.class);
+                                startActivity(i);
+                            }else{
+                                String errorCode = ((FirebaseAuthException) task.getException()).getErrorCode();
+                            }
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
 
-                            Log.i("Falha na autenticação", e.getMessage());
+                            Toast.makeText(getApplicationContext(), "Usuário Não Cdastrado!",Toast.LENGTH_LONG).show();
                         }
                     });
                 }catch (Exception e) {
-                    Toast.makeText(getApplicationContext(), "Usuário Não Cdastrado!",Toast.LENGTH_LONG).show();
+
                 }
 
             }
